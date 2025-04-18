@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; /* Pure white background */
+    padding: 25px 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Softer shadow for light theme */
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #212529; /* Dark gray text */
+    font-family: 'Outfit', sans-serif;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+}
+
+.navbar-links li {
+    cursor: pointer;
+    color: #212529; /* Dark text */
+    font-size: 16px;
+    transition: color 0.3s;
+    font-family: 'Outfit', sans-serif;
+}
+
+.navbar-links li:hover {
+    color: #495057; /* Medium gray on hover */
+}
+
+.navbar-links .active {
+    font-weight: bold;
+    color: #212529;
+    border-bottom: 2px solid #212529;
+}
+
+.navbar-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-buttons button {
+    width: 120px;
+    height: 45px;
+    color: #212529;
+    background: #f8f9fa; /* Off-white button background */
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Outfit', sans-serif;
+}
+
+.navbar-buttons button:hover {
+    background-color: #e9ecef; /* Slightly darker off-white on hover */
+}
+
+.navbar-buttons button.gray {
+    background: #dee2e6; /* Light gray for "selected" style */
+    color: #212529;
+    font-weight: bold;
+}
